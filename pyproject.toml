@@ -1,0 +1,16 @@
+[project]
+name = "data-quality-checks"
+version = "0.1.0"
+description = "Simple data-validation functions with tests and CI."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+# E/F = standard errors and pyflakes (unused imports, undefined names), I = import sorting
+select = ["E", "F", "I"]
